@@ -1,0 +1,17 @@
+<div
+  [formGroup]="form"
+  [ngClass]="{ 'ring-2 ring-red-500': isFieldInvalid }"
+  class="flex flex-row items-center w-full px-4 py-2 rounded-md appearance-none border-none bg-lighter-grayish-cyan hover:ring-2 hover:ring-primary focus-within:ring-2 focus-within:ring-primary"
+>
+  <div class="w-4 h-4">
+    <ng-content></ng-content>
+  </div>
+  <div class="flex-1">
+    <input
+      [id]="fieldId"
+      [type]="fieldType"
+      [formControlName]="controlName"
+      class="p-0 bg-transparent w-full text-very-dark-cyan font-bold text-lg text-right border-none ring-0 focus:ring-0"
+    />
+  </div>
+</div>
