@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: true,
+    content: ["./src/**/*.html", "./src/app/sections/nav/nav.component.ts"],
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
